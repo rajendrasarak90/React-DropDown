@@ -2,8 +2,8 @@ import React from "react";
 
 const Home = (props) => {
   return (
-    <div className="home">
-      <h1>Q. Should you use a Dropdown ?</h1>
+    <div className={props.isShow ? "home" : "marginBottom home"}>
+      <h1>Should you use a Dropdown?</h1>
       <button onMouseEnter={props.handleMouseEnter}>
         <span>Select</span>{" "}
         <i
